@@ -1,0 +1,263 @@
+:root {
+    --black: #212121;
+    --white: #ffffff;
+    --footer_color: #2f303a;
+    --blue: #2196f3;
+    --grey: #757575;
+    --like_white: #f5f4fa;
+    --fonts: "Roboto";
+}
+
+body {
+    font-family: var(--fonts), sans-serif;
+    color: var(--black);
+    font-style: normal;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+address{
+    font-style: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+    .contact-info {
+        color: var(--grey);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+
+        a {
+            transition: color 300ms ease-in-out;
+        }
+
+        a:hover, a:focus {
+            color: var(--blue);
+        }
+
+    }
+
+    .link-list {
+        a {
+            color: var(--black);
+            font-weight: 500;
+            transition: color 300ms ease-in-out;
+            letter-spacing: 0.02em;
+        }
+
+        a:hover, a:focus {
+            color: var(--blue);
+        }
+    }
+
+    .header-logo {
+
+        color: var(--blue);
+
+        > span {
+            color: var(--black);
+        }
+        font-family: Raleway, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+
+
+    .hero{
+        background-color: var(--footer_color);
+    }
+
+    .business-section-title{
+        color: var(--white);
+        text-align: center;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .business-section-button{
+        color: var(--white);
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        background: var(--blue);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    }
+
+
+
+    .detail-list-title{
+
+        color: var(--black);
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    .detail-list-text{
+
+        color: var(--grey);
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+
+
+
+    .work-title{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+
+.team{
+    background: var(--like_white);
+
+}
+
+ .team-title{
+     color: var(--black);
+     font-weight: 700;
+     font-size: 36px;
+     letter-spacing: 0.03em;
+ }
+
+        .member-title{
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+
+        }
+        .member-text{
+            color: var(--grey);
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 0.03em;
+        }
+
+
+.button_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .button_list_element {
+        color: var(--black);
+        background-color: var(--like_white);
+
+        button {
+            transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+            border: none;
+        }
+
+        button:hover, a:focus {
+            color: var(--white);
+            background-color: var(--blue);
+        }
+    }
+
+}
+
+.button_list_element {
+    color: var(--black);
+    background: var(--like_white);
+
+    button {
+        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+        border: none;
+    }
+
+    button:hover, a:focus {
+        color: var(--white);
+        background-color: var(--blue);
+    }
+    .button_list_item {
+        text-align: center;
+        padding: 6px 22px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 162.5%;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+
+.project-list-element{
+    border: 1px solid #EEE;
+    background: var(--white);
+}
+
+.project-list-title {
+
+    font-weight: 700;
+    letter-spacing: 0.06em;
+
+
+}
+
+.project-list-text {
+
+    color: var(--grey);
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer {
+    background-color: var(--footer_color);
+
+    .footer-logo {
+        color: var(--blue);
+
+        > span {
+            color: var(--white);
+        }
+        font-family: Raleway, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+    .address {
+        color: var(--white);
+        line-height: 115%;
+        letter-spacing: 0.03em;
+    }
+    .contact-info-footer{
+        color: var(--grey);
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        font-style: normal;
+
+        a {
+            transition: color 300ms ease-in-out;
+        }
+
+        a:hover, a:focus {
+            color: var(--blue);
+        }
+    }
+
+
+}
