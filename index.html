@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Studio</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body class="body">
 <header class="header">
+    <div class="container">
     <a href="index.html" class="header-logo"> Web<span>Studio</span> </a>
-    <nav>
+
+        <nav>
         <ul class="link-list">
             <li class="link-element">
                 <a href="index.html">Студія</a>
@@ -34,15 +38,19 @@
             <a href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
     </ul>
+    </div>
 </header>
 
-<main class="main-business">
+<main>
     <section class="hero">
+        <div class="container">
         <h1 class="business-section-title"> Ефективні рішення для вашого бізнесу </h1>
         <button type="button" class="business-section-button"> Замовити послугу</button>
+        </div>
     </section>
 
     <section class="detail">
+        <div class="container">
         <ul class="detail-list">
             <li class="detail-list-element">
                 <h3 class="detail-list-title">УВАГА ДО ДЕТАЛЕЙ </h3>
@@ -61,8 +69,10 @@
                 <p class="detail-list-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
+        </div>
     </section>
     <section class="work">
+        <div class="container">
         <h2 class="work-title"> Чим ми займаємося </h2>
         <ul class="work-list">
             <li class="work-list-element">
@@ -75,35 +85,46 @@
                 <img class="work-list-img" src="images/whatwedo3.png" width="370" height="294" alt="Дизайнерські-рішення">
             </li>
         </ul>
-
+        </div>
     </section>
     <section class="team">
+        <div class="container">
         <h2 class="team-title"> Наша команда </h2>
         <ul class="team-list">
             <li class="members">
                 <img class="member-img" src="images/Ighor.png" width="270" height="260" alt="Дизайнер-Ігор">
+                <div class="members-div-text">
                 <h3 class="member-title"> Ігор Дем'яненко </h3>
                 <p class="member-text"> Product Designer </p>
+                </div>
             </li>
             <li class="members">
                 <img class="member-img" src="images/olga.png" width="270" height="260" alt="Розробниця-Ольга">
+                <div class="members-div-text">
                 <h3 class="member-title"> Ольга Рєпіна </h3>
                 <p class="member-text"> Frontend Developer </p>
+                </div>
             </li>
             <li class="members">
                 <img class="member-img" src="images/mukola.png" width="270" height="260" alt="Маркетинг-Микола">
+                <div class="members-div-text">
                 <h3 class="member-title"> Микола Тарасов </h3>
                 <p class="member-text"> Marketing </p>
+                </div>
             </li>
             <li class="members">
                 <img class="member-img" src="images/muhaylo.png" width="270" height="260" alt="Дизайнер-Михайло">
+                <div class="members-div-text">
                 <h3 class="member-title"> Михайло Єрмаков </h3>
                 <p class="member-text"> UI Designer </p>
+                </div>
             </li>
         </ul>
+            </div>
     </section>
 </main>
 <footer class="footer">
+    <div class="container">
     <a href="index.html" class="footer-logo"> Web<span>Studio</span> </a>
     <address>
         <p class="address"> м. Київ, пр-т Лесі Українки, 26 </p>
@@ -112,6 +133,7 @@
             <li class="contact-info-footer"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 </html>
