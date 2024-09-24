@@ -111,7 +111,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.03em;
     word-wrap: break-word;
-    color: var(--light_blue);
+    color: var(--blue);
 }
 .link-list .link-element-active ::after{
     content: "";
@@ -121,7 +121,7 @@ img {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #2196f3;
+    background-color: var(--blue);
     position: absolute;
 }
 
@@ -210,7 +210,7 @@ img {
     cursor: pointer;
     padding: 10px 24px;
     margin-top: 30px;
-
+    transition: background-color 300ms ease-in-out;
 
 }
 
@@ -293,13 +293,13 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
     background: rgba(47, 48, 58, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: white;
+    color: var(--white);
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -340,11 +340,6 @@ img {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 
 }
-
-.member-img {
-
-}
-
 
 .members-div-text{
     padding: 30px;
@@ -389,7 +384,7 @@ img {
     border-radius: 50%;
     color: var(--icon);
     fill: currentColor;
-    transition: all 300ms ease-in-out;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 a.social-links-icons:hover,
@@ -401,8 +396,7 @@ a.social-links-icons:focus {
 
 .clients{
     text-align: center;
-    padding: 94px 0;
-    margin: 0;
+    padding: 94px;
 }
 
 .client-list{
@@ -411,6 +405,7 @@ a.social-links-icons:focus {
     justify-content: center;
     gap: 30px;
 }
+
 .clients-title{
     color: var(--black);
     font-size: 36px;
@@ -424,7 +419,7 @@ a.social-links-icons:focus {
     border: 1px var(--icon) solid;
     display: inline-block;
     color: var(--icon);
-    transition: color 0.5s, border 0.5s;
+    transition: color 300ms ease-in-out, border 300ms ease-in-out;
 }
 .client a:hover,
 .client a:focus {
@@ -437,7 +432,7 @@ a.social-links-icons:focus {
     height: 100%;
     padding: 16px 32px;
     fill: currentColor;
-    transition: fill 0.5s;
+    transition: fill 300ms ease-in-out;
 }
 
 .button_list {
@@ -450,9 +445,6 @@ a.social-links-icons:focus {
 }
 
 
-
-
-
     .button_list_item {
         text-align: center;
         padding: 6px 22px;
@@ -461,7 +453,7 @@ a.social-links-icons:focus {
         font-weight: 500;
         line-height: 1.62;
         letter-spacing: 0.03em;
-        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+        transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
         border: none;
     }
     .button_list_item:hover, .button_list_item:focus {
@@ -522,21 +514,21 @@ a.social-links-icons:focus {
     transition-duration: 250ms;
     opacity: 0.9;
     transition-property: transform;
-    background-color: #2196f3;
+    background-color: var(--blue);
 
 }
 
 .text_portfolio {
     font-size: 18px;
-    line-height: 155.56%;
+    line-height: 1.55;
     letter-spacing: 0.03em;
     color: var(--white);
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
 }
 
-.project-list-container:hover .project-list-container-text,
-.project-list-container:focus .project-list-container-text{
+.project-list-element a:hover .project-list-container-text,
+.project-list-element a:focus .project-list-container-text{
     transform: translateY(0);
 }
 
@@ -546,7 +538,7 @@ a.social-links-icons:focus {
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
-    /*margin: 5px;*/
+    margin-bottom: 4px;
 
 
 }
@@ -561,7 +553,7 @@ a.social-links-icons:focus {
 }
 
 .project-list-element-text {
-    padding: 20px;
+    padding: 20px 23px;
 }
 
 
@@ -614,7 +606,6 @@ a.social-links-icons:focus {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     margin-bottom: 20px;
 }
 
@@ -641,14 +632,14 @@ a.social-links-icons:focus {
 
     color: var(--white);
     fill: currentColor;
-    transition: color 0.5s, background-color 0.5s;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .footer-social-links-icons:hover,
 .footer-social-links-icons:focus {
     color: var(--white);
     fill: currentColor;
-    background-color: var(--light_blue);
+    background-color: var(--blue);
 }
 
 .contact-info-footer {
