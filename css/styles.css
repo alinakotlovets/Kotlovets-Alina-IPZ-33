@@ -892,8 +892,8 @@ a.social-links-icons:focus {
     position: relative;
 }
 
-.form-label:not(:last-child) {
-    margin-bottom: 10px;
+.form-label:not(:first-child) {
+    margin-top: 10px;
 }
 
 .form-icon {
