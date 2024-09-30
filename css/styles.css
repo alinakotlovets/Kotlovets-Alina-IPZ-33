@@ -699,8 +699,12 @@ a.social-links-icons:focus {
 .footer_box_second_plus_one {
         display: flex;
 }
-.footer_input {
+
+.footer-label-input{
     flex-grow: 1;
+}
+.footer_input {
+    width: 100%;
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -729,6 +733,10 @@ a.social-links-icons:focus {
     display: flex;
     align-items: center;
         }
+
+.footer_button:hover, .footer_button:focus {
+    background-color: var(--light_blue);
+}
 
 
 
@@ -833,6 +841,7 @@ a.social-links-icons:focus {
 }
 
 .label-text {
+    display: block;
     margin-bottom: 4px;
 }
 
@@ -871,6 +880,7 @@ a.social-links-icons:focus {
 .form-input:focus,
 .form_textarea:hover,
 .form_textarea:focus {
+    transition: 300ms;
     outline: 1px var(--blue) solid;
 }
 
@@ -886,15 +896,16 @@ a.social-links-icons:focus {
 .form-icon {
     position: absolute;
     color: var(--black);
-    left: 0;
-    margin-top: 11px;
-    margin-left: 12px;
+    /*left: 0;*/
+    bottom: 11px;
+    left: 12px;
 }
 
 .checkbox-div {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 15px;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 30px;*/
+    /*padding-left: 15px;*/
+    justify-content: center;
     display: flex;
     gap: 9px;
 }
@@ -942,9 +953,8 @@ input[type="checkbox"]:checked::before {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    width: 200px;
     cursor: pointer;
-
+    margin-top: 30px;
     padding: 10px 52px;
 
     color: var(--white);
@@ -952,6 +962,7 @@ input[type="checkbox"]:checked::before {
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
+    transition: color 300ms ease-in-out ;
 }
 
 .form-button:hover,
