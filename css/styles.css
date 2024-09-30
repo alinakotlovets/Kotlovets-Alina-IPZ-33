@@ -732,11 +732,11 @@ a.social-links-icons:focus {
     color: var(--white);
     display: flex;
     align-items: center;
+    transition: background-color 300ms ease-in-out;
         }
 
 .footer_button:hover, .footer_button:focus {
     background-color: var(--light_blue);
-    transition: background-color 300ms ease-in-out;
 }
 
 
