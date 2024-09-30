@@ -889,8 +889,11 @@ a.social-links-icons:focus {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.01em;
-    margin-bottom: 10px;
     position: relative;
+}
+
+.form-label:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .form-icon {
@@ -962,7 +965,7 @@ input[type="checkbox"]:checked::before {
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    transition: color 300ms ease-in-out ;
+    transition: background-color 300ms ease-in-out ;
 }
 
 .form-button:hover,
