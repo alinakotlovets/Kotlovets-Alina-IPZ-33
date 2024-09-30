@@ -736,6 +736,7 @@ a.social-links-icons:focus {
 
 .footer_button:hover, .footer_button:focus {
     background-color: var(--light_blue);
+    transition: background-color 300ms ease-in-out;
 }
 
 
@@ -856,6 +857,7 @@ a.social-links-icons:focus {
     border-radius: 4px;
     border: 1px #21212133 solid;
     padding: 11px 0px 11px 30px;
+    transition: outline-color 300ms ease-in-out;
 }
 
 .form_textarea {
@@ -872,7 +874,6 @@ a.social-links-icons:focus {
 
 .form-input:focus + .form-icon,
 .form-input:hover + .form-icon {
-    transition: 300ms;
     color: var(--blue);
 }
 
@@ -880,7 +881,6 @@ a.social-links-icons:focus {
 .form-input:focus,
 .form_textarea:hover,
 .form_textarea:focus {
-    transition: 300ms;
     outline: 1px var(--blue) solid;
 }
 
@@ -896,13 +896,13 @@ a.social-links-icons:focus {
 .form-icon {
     position: absolute;
     color: var(--black);
-    /*left: 0;*/
     bottom: 11px;
     left: 12px;
+    transition: color 300ms ease-in-out;
 }
 
 .checkbox-div {
-    /*padding-top: 20px;*/
+    margin-top: 20px;
     /*padding-bottom: 30px;*/
     /*padding-left: 15px;*/
     justify-content: center;
@@ -946,6 +946,7 @@ input[type="checkbox"]:checked::before {
 .button-form-div {
     display: inline-block;
     text-align: center;
+    margin-top: 30px;
 }
 
 .form-button {
@@ -954,7 +955,6 @@ input[type="checkbox"]:checked::before {
     border-radius: 4px;
     border: none;
     cursor: pointer;
-    margin-top: 30px;
     padding: 10px 52px;
 
     color: var(--white);
