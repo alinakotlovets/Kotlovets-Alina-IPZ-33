@@ -1,0 +1,44 @@
+.clients {
+  text-align: center;
+  padding: 94px;
+
+  .clients-title {
+    color: $black;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+  }
+
+  .client-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+
+    .client {
+      a {
+        border-radius: 4px;
+        border: 1px $icon solid;
+        display: inline-block;
+        color: $icon;
+        transition: color 300ms ease-in-out, border 300ms ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $blue;
+          border: 1px $blue solid;
+        }
+      }
+
+      .client-logo {
+        width: 100%;
+        height: 100%;
+        padding: 16px 32px;
+        fill: currentColor;
+        transition: fill 300ms ease-in-out;
+      }
+    }
+  }
+}
