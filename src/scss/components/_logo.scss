@@ -1,0 +1,12 @@
+.header-logo {
+  color: $blue;
+
+  > span {
+    color: $black;
+  }
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}

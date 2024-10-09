@@ -1,0 +1,163 @@
+.footer {
+  background-color: $footer_color;
+
+  .container {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
+    gap: 94px;
+  }
+
+  &-logo {
+    color: $blue;
+
+    > span {
+      color: $white;
+    }
+
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  address {
+    ul {
+      li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .address {
+    color: $white;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  &-text {
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+
+    li {
+      height: 44px;
+      width: 44px;
+    }
+
+    .footer-social-links-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      height: 100%;
+      color: $white;
+      fill: currentColor;
+      transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        fill: currentColor;
+        background-color: $blue;
+      }
+    }
+  }
+
+  .contact-info-footer {
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    font-style: normal;
+
+    a {
+      transition: color 300ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+  }
+
+  .join {
+    flex-grow: 1;
+  }
+
+  .footer_box_second_plus_one {
+    display: flex;
+  }
+
+  .footer-label-input {
+    flex-grow: 1;
+  }
+
+  &_input {
+    width: 100%;
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    padding: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:focus,
+    &:hover {
+      outline-color: $blue;
+    }
+  }
+
+  &_button {
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 28px;
+    margin-left: 12px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $white;
+    display: flex;
+    align-items: center;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: $light_blue;
+    }
+  }
+
+  .footer_button_svg {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+
+}
+
+
+
+
+
+
