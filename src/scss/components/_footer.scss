@@ -24,35 +24,20 @@
   .footer-links-left,
   .join{
       @include mobile {
+        width: 100%;
         margin-left: 0;
       }
       @include tablet {
         margin-left: 0;
       }
-    &:nth-child(1) {
-      @include mobile {
-        text-align: center;
-      }
-      @include tablet {
-        text-align: center;
-      }
+
+    @include mobile {
+      text-align: center;
     }
-    &:nth-child(2) {
-      @include mobile {
-        text-align: center;
-      }
-      @include tablet {
-        text-align: center;
-      }
+    @include tablet {
+      text-align: center;
     }
-    &:nth-child(3) {
-      @include mobile {
-        text-align: center;
-      }
-      @include tablet {
-        text-align: center;
-      }
-    }
+
   }
 
   .footer-logo {
@@ -164,6 +149,10 @@
   }
 
   .footer-label-input {
+    @include mobile {
+      width: 100%;
+      max-width: 450px;
+    }
     flex-grow: 1;
   }
 
@@ -183,12 +172,6 @@
     &:focus,
     &:hover {
       outline-color: $blue;
-    }
-    @include tablet {
-      width: 450px;
-    }
-    @include mobile {
-      width: 450px;
     }
   }
 
