@@ -9,6 +9,8 @@
   }
   .detail-list-element {
     max-width:  350px;
+    flex: 1;
+    min-width: 290px;
     @include mobile {
       max-width: 100%;
     }

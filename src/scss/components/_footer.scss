@@ -153,6 +153,10 @@
       width: 100%;
       max-width: 450px;
     }
+    @include tablet {
+      width: 100%;
+      max-width: 450px;
+    }
     flex-grow: 1;
   }
 

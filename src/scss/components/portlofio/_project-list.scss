@@ -16,15 +16,15 @@
 .project-list-element {
   border: 1px solid #eeeeee;
   background: $white;
-  @include tablet {
-    gap: 24px;
-    //justify-content: start;
-    max-height: 100%;
-  }
+  flex: 1;
+  min-width: 290px;
+  max-width: 370px;
+
   @include mobile {
     width: 100%;
     margin: 0;
   }
+
   a {
     display: block;
     transition: box-shadow 300ms ease-in-out;
