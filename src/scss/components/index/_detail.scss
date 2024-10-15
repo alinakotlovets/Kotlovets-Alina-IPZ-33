@@ -8,11 +8,13 @@
     padding: 60px 0;
   }
   .detail-list-element {
-    max-width:  350px;
     flex: 1;
-    min-width: 290px;
     @include mobile {
       max-width: 100%;
+    }
+    @include tablet{
+      max-width:  350px;
+      min-width: 290px;
     }
   }
 
