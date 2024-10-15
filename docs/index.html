@@ -2,6 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
@@ -32,16 +33,65 @@
 
         <ul class="contact-info">
             <li>
-                <a class="header_contacts_link" href="mailto:info@devstudio.com">
+                <a class="header-contacts-link" href="mailto:info@devstudio.com">
                     <svg class="header-icon" width="16" height="12">
                         <use href="./images/svg/icons.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
             </li>
             <li>
-                <a class="header_contacts_link" href="tel:+380961111111">
+                <a class="header-contacts-link" href="tel:+380961111111">
                     <svg class="header-icon" width="10" height="16">
                         <use href="./images/svg/icons.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+        <button class="mobile-button" type="button" data-menu-button aria-expanded="false">
+            <svg class="mobile-button-icon">
+                <use class="mobile-button--close" href="./images/svg/icons.svg#icon-burger-close"></use>
+                <use class="mobile-button--open" href="./images/svg/icons.svg#icon-burger-open"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile" data-menu>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="./index.html" class="mobile-nav-link ">Студія</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="./portfolio.html" class="mobile-nav-link">Портфоліо</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="" class="mobile-nav-link">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+            <li class="mobile-contacts-item">
+                <a
+                        class="mobile-contacts-link link mobile-contacts-link--blue"
+                        href="tel:+380961111111"
+                >+380961111111</a
+                >
+            </li>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+                >
+            </li>
+        </ul>
+        <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" href="">LinkedIn</a>
             </li>
         </ul>
     </div>
@@ -50,8 +100,8 @@
 <main>
     <section class="hero">
         <div class="container">
-            <h1 class="business-section-title"> Ефективні рішення для вашого бізнесу </h1>
-            <button type="button" class="business-section-button" data-modal-open> Замовити послугу</button>
+            <h1 class="hero-section-title"> Ефективні рішення для вашого бізнесу </h1>
+            <button type="button" class="hero-section-button" data-modal-open> Замовити послугу</button>
         </div>
     </section>
 
@@ -132,35 +182,35 @@
         <div class="container">
             <h2 class="team-title"> Наша команда </h2>
             <ul class="team-list">
-                <li class="members">
+                <li class="member">
                     <img class="member-img" src="images/Ighor.png" width="270" height="260" alt="Дизайнер-Ігор">
-                    <div class="members-div-text">
+                    <div class="member-div-text">
                         <h3 class="member-title"> Ігор Дем'яненко </h3>
                         <p class="member-text"> Product Designer </p>
-                    <ul class="members-social-links">
+                    <ul class="member-social-links">
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg  width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-instagram"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-twitter"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-facebook"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-linkedin"> </use>
                                 </svg>
@@ -169,35 +219,35 @@
                     </ul>
                     </div>
                 </li>
-                <li class="members">
+                <li class="member">
                     <img class="member-img" src="images/olga.png" width="270" height="260" alt="Розробниця-Ольга">
-                    <div class="members-div-text">
+                    <div class="member-div-text">
                         <h3 class="member-title"> Ольга Рєпіна </h3>
                         <p class="member-text"> Frontend Developer </p>
-                <ul class="members-social-links">
+                <ul class="member-social-links">
                     <li>
-                        <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                        <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                             <svg  width="20" height="20">
                                 <use href="./images/svg/icons.svg#icon-instagram"> </use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                        <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                             <svg width="20" height="20">
                                 <use href="./images/svg/icons.svg#icon-twitter"> </use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                        <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                             <svg width="20" height="20">
                                 <use href="./images/svg/icons.svg#icon-facebook"> </use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                        <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                             <svg width="20" height="20">
                                 <use href="./images/svg/icons.svg#icon-linkedin"> </use>
                             </svg>
@@ -206,35 +256,35 @@
                 </ul>
                     </div>
                 </li>
-                <li class="members">
+                <li class="member">
                     <img class="member-img" src="images/mukola.png" width="270" height="260" alt="Маркетинг-Микола">
-                    <div class="members-div-text">
+                    <div class="member-div-text">
                         <h3 class="member-title"> Микола Тарасов </h3>
                         <p class="member-text"> Marketing </p>
-                    <ul class="members-social-links">
+                    <ul class="member-social-links">
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg  width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-instagram"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-twitter"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-facebook"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-linkedin"> </use>
                                 </svg>
@@ -243,35 +293,35 @@
                     </ul>
                     </div>
                 </li>
-                <li class="members">
+                <li class="member">
                     <img class="member-img" src="images/muhaylo.png" width="270" height="260" alt="Дизайнер-Михайло">
-                    <div class="members-div-text">
+                    <div class="member-div-text">
                         <h3 class="member-title"> Михайло Єрмаков </h3>
                         <p class="member-text"> UI Designer </p>
-                    <ul class="members-social-links">
+                    <ul class="member-social-links">
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg  width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-instagram"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-twitter"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-facebook"> </use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="social-links-icons" href="https://www.instagram.com" rel="nofollow">
+                            <a class="social-link-icon" href="https://www.instagram.com" rel="nofollow">
                                 <svg width="20" height="20">
                                     <use href="./images/svg/icons.svg#icon-linkedin"> </use>
                                 </svg>
@@ -339,57 +389,57 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-links-right">
-        <a href="index.html" class="footer-logo"> Web<span>Studio</span> </a>
-        <address>
-            <p class="address"> м. Київ, пр-т Лесі Українки, 26 </p>
-            <ul>
-                <li class="contact-info-footer"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contact-info-footer"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <a href="index.html" class="footer-logo"> Web<span>Studio</span> </a>
+            <address>
+                <p class="address"> м. Київ, пр-т Лесі Українки, 26 </p>
+                <ul>
+                    <li class="contact-info-footer"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contact-info-footer"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-links-left">
+            <p class="footer-text"> Приєднуйтесь</p>
+            <ul class="footer-social-links">
+                <li>
+                    <a class="footer-social-link-icon" href="https://www.instagram.com" rel="nofollow">
+                        <svg  width="20" height="20">
+                            <use href="./images/svg/icons.svg#icon-instagram"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-social-link-icon" href="https://www.instagram.com" rel="nofollow">
+                        <svg width="20" height="20">
+                            <use href="./images/svg/icons.svg#icon-twitter"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-social-link-icon" href="https://www.instagram.com" rel="nofollow">
+                        <svg width="20" height="20">
+                            <use href="./images/svg/icons.svg#icon-facebook"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-social-link-icon" href="https://www.instagram.com" rel="nofollow">
+                        <svg width="20" height="20">
+                            <use href="./images/svg/icons.svg#icon-linkedin"> </use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-        </address>
-       </div>
-    <div class="footer-links-left">
-        <p class="footer-text"> Приєднуйтесь</p>
-    <ul class="footer-social-links">
-        <li>
-            <a class="footer-social-links-icons" href="https://www.instagram.com" rel="nofollow">
-                <svg  width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-instagram"> </use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="footer-social-links-icons" href="https://www.instagram.com" rel="nofollow">
-                <svg width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-twitter"> </use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="footer-social-links-icons" href="https://www.instagram.com" rel="nofollow">
-                <svg width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-facebook"> </use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="footer-social-links-icons" href="https://www.instagram.com" rel="nofollow">
-                <svg width="20" height="20">
-                    <use href="./images/svg/icons.svg#icon-linkedin"> </use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-    </div>
+        </div>
         <div class="join">
             <p class="footer-text">Підпишіться на розсилку</p>
-            <form class="footer_box_second_plus_one">
+            <form class="footer-form">
                 <label class="footer-label-input"> <span class="visually-hidden"></span>
                     <input type="email" class="footer_input" required placeholder="E-mail">
                 </label>
                 <button type="submit" class="footer_button">
                     Підписатися
-                    <svg class="footer_button_svg" width="24" height="24">
+                    <svg class="footer-button-svg" width="24" height="24">
                         <use href="./images/svg/icons.svg#icon-send"></use>
                     </svg>
                 </button>
@@ -447,5 +497,6 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/nav.js"></script>
 </body>
 </html>

@@ -1,23 +1,45 @@
 .clients {
   text-align: center;
-  padding: 94px;
-
-  .clients-title {
-    color: $black;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    word-wrap: break-word;
-    margin-bottom: 50px;
+  padding: 94px 0;
+  @include mobile {
+    padding: 60px 0;
   }
+  @include tablet {
+    padding: 60px 0;
+  }
+
 
   .client-list {
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      gap: 17px;
+      flex-wrap: wrap;
+    }
+  }
+    .clients-title {
+    color: $black;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+      @include mobile{
+        margin-bottom: 30px;
+      }
+      @include tablet{
+        margin-bottom: 30px;
+      }
+  }
+
 
     .client {
+      max-height: 92px;
       a {
         border-radius: 4px;
         border: 1px $icon solid;
@@ -38,7 +60,9 @@
         padding: 16px 32px;
         fill: currentColor;
         transition: fill 300ms ease-in-out;
+        @include mobile {
+          padding: 16px 52px;
+        }
       }
     }
   }
-}

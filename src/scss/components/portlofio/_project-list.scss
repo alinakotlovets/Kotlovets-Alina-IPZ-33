@@ -4,13 +4,32 @@
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
+  justify-content: center;
+  @include mobile {
+    //padding: 60px 0;
+  }
+  @include tablet {
+    //padding: 60px 0;
+  }
 }
 
 .project-list-element {
   border: 1px solid #eeeeee;
   background: $white;
   max-width: 370px;
-
+  @include tablet {
+    gap: 24px;
+    justify-content: start;
+    max-height: 100%;
+  }
+  @include tablet {
+    max-width: 345px;
+  }
+  @include mobile {
+    max-width: 450px;
+    max-height: 404px;
+    margin: 0px;
+  }
   a {
     display: inline-block;
     transition: box-shadow 300ms ease-in-out;
@@ -29,12 +48,24 @@
 
 .project-list-img {
   width: 100%;
+  @include tablet {
+    max-width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .project-list-container {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  @include mobile {
+    width: 450px;
+    height: 294px;
+  }
 
   .project-list-container-text {
     position: absolute;
@@ -48,6 +79,10 @@
     opacity: 0.9;
     transition-property: transform;
     background-color: $blue;
+    @include mobile {
+      transform: translateY(134%);
+    }
+
   }
 }
 
@@ -58,6 +93,9 @@
   color: $white;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
+  @include mobile {
+    padding: 77px 24px;
+  }
 }
 
 .project-list-title {
