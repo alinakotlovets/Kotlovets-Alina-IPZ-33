@@ -1,4 +1,4 @@
-.visually-hidden {
+.visually-hidden, {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -19,16 +19,17 @@
   opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 1;
+  z-index: 1000;
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
+
+    }
   }
-}
 
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -42,6 +43,13 @@
   0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001;
+  @include tablet {
+    min-width: 450px;
+  }
+  @include mobile{
+    min-width: 92.5%;
+  }
 }
 
 .close-modal-button {
@@ -52,6 +60,7 @@
   width: 30px;
   height: 30px;
   align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: $white;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -64,8 +73,11 @@
 }
 
 .icon-modal {
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  justify-items: center;
+  padding-right: 0;
+  padding-left: 0;
   fill: $black;
   transition: fill 0.5s;
 }
@@ -87,6 +99,10 @@
   .label-text {
     display: block;
     margin-bottom: 4px;
+    @include tablet {
+      font-size: 12px;
+      white-space: nowrap;
+    }
   }
 
   .form-li {
@@ -160,6 +176,9 @@
   .form-a {
     text-decoration: underline;
     color: $blue;
+    @include tablet {
+      font-size: 12px;
+    }
   }
 
   .label_license {
@@ -171,7 +190,7 @@
     appearance: none;
     border: $black 1px solid;
     height: 15px;
-    width: 16px;
+    min-width: 16px;
     color: $white;
     border-radius: 2px;
     transition-duration: 0.5s;

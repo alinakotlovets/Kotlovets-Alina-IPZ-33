@@ -1,13 +1,28 @@
-.button_list {
+.button-list {
   padding-top: 94px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  @include mobile {
+    justify-content: normal;
+    flex-wrap: wrap;
+    max-width: 350px;
+    row-gap: 15px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+  @include tablet{
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
 
-  .button_list_item {
+
+
+  .button-list-item {
     text-align: center;
+    color: $black;
     padding: 6px 22px;
     border-radius: 4px;
     font-size: 16px;

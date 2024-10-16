@@ -1,11 +1,20 @@
 .work {
   text-align: center;
   padding-bottom: 94px;
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
 
   ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   .work-title {
